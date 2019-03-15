@@ -1,0 +1,50 @@
+@import '_variables';
+@import '_mixins';
+@import '_functions';
+
+//$color-important: nth($colors, 1);
+div.#{$import-name}{
+    border: 2px solid $color-important;
+    background-color: lighten($color-important, 30);
+    color: darken($color-important, 20);     
+    font-size: $font-size;
+    width: relative-width($page-width, 20);
+    
+    p.important{
+        background-color: lighten($color-important, 40);
+        color: darken($color-important, 20);  
+        font: {
+            family: verdana;
+            size: $font-size * 0.9;
+        }   
+    }
+    /*Slajd 52, 57, 61, [65]  */
+    p.very-important{
+        @extend p.important;
+        font: {
+            weight: bold;
+            size: $font-size * 0.95;
+        }
+        &:hover{
+            font: {
+                size: $font-size * 0.95 * 1.2;
+            }   
+        }
+    }
+
+    @media screen and (max-width: 425px) {
+        font-size: $font-size * 0.6;
+    }
+}
+
+
+@include section-style('div', 'info', $colors);
+//@include section-style('p', 'info', $colors);
+
+// @include element-spaces("div", 5, 10);
+
+// @include head-size(6, 100);
+
+// @include bootstrap-cols();
+
+@include head-colors();               

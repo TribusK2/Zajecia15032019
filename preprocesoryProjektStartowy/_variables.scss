@@ -1,0 +1,6 @@
+$colors: (info:black ,important: rgb(175, 32, 27), important-light:rgb(153, 175, 27));
+$color-important: map-get($colors, important-light);
+$font-size: 1em;
+$import-name: 'important';
+
+$page-width: 1400;

@@ -1,0 +1,188 @@
+/* p, red  -> p.red  */
+div.important {
+  border: 2px solid #99af1b;
+  background-color: #d9ea79;
+  color: #4c570d;
+  font-size: 1em;
+  width: 97.14286%;
+  /*Slajd 52, 57, 61, [65]  */
+}
+
+div.important p.important, div.important p.very-important {
+  background-color: #e6f1a5;
+  color: #4c570d;
+  font-family: verdana;
+  font-size: 0.9em;
+}
+
+div.important p.very-important {
+  font-weight: bold;
+  font-size: 0.95em;
+}
+
+div.important p.very-important:hover {
+  font-size: 1.14em;
+}
+
+@media screen and (max-width: 425px) {
+  div.important {
+    font-size: 0.6em;
+  }
+}
+
+div.info {
+  border: 1px solid #404040;
+  background-color: black;
+  color: #cccccc;
+  font-size: 1em;
+}
+
+.h1-red {
+  font-size: 60px;
+  color: red;
+}
+
+.h2-red {
+  font-size: 50px;
+  color: red;
+}
+
+.h3-red {
+  font-size: 40px;
+  color: red;
+}
+
+.h4-red {
+  font-size: 30px;
+  color: red;
+}
+
+.h5-red {
+  font-size: 20px;
+  color: red;
+}
+
+.h6-red {
+  font-size: 10px;
+  color: red;
+}
+
+.h1-yellow {
+  font-size: 60px;
+  color: yellow;
+}
+
+.h2-yellow {
+  font-size: 50px;
+  color: yellow;
+}
+
+.h3-yellow {
+  font-size: 40px;
+  color: yellow;
+}
+
+.h4-yellow {
+  font-size: 30px;
+  color: yellow;
+}
+
+.h5-yellow {
+  font-size: 20px;
+  color: yellow;
+}
+
+.h6-yellow {
+  font-size: 10px;
+  color: yellow;
+}
+
+.h1-green {
+  font-size: 60px;
+  color: green;
+}
+
+.h2-green {
+  font-size: 50px;
+  color: green;
+}
+
+.h3-green {
+  font-size: 40px;
+  color: green;
+}
+
+.h4-green {
+  font-size: 30px;
+  color: green;
+}
+
+.h5-green {
+  font-size: 20px;
+  color: green;
+}
+
+.h6-green {
+  font-size: 10px;
+  color: green;
+}
+
+.h1-blue {
+  font-size: 60px;
+  color: blue;
+}
+
+.h2-blue {
+  font-size: 50px;
+  color: blue;
+}
+
+.h3-blue {
+  font-size: 40px;
+  color: blue;
+}
+
+.h4-blue {
+  font-size: 30px;
+  color: blue;
+}
+
+.h5-blue {
+  font-size: 20px;
+  color: blue;
+}
+
+.h6-blue {
+  font-size: 10px;
+  color: blue;
+}
+
+.h1-orange {
+  font-size: 60px;
+  color: orange;
+}
+
+.h2-orange {
+  font-size: 50px;
+  color: orange;
+}
+
+.h3-orange {
+  font-size: 40px;
+  color: orange;
+}
+
+.h4-orange {
+  font-size: 30px;
+  color: orange;
+}
+
+.h5-orange {
+  font-size: 20px;
+  color: orange;
+}
+
+.h6-orange {
+  font-size: 10px;
+  color: orange;
+}

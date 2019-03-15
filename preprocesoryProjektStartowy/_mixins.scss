@@ -1,0 +1,64 @@
+//slajdy 119, 
+@mixin section-style($type, $name, $colors, $font-size: 1em) {
+    $color: map-get($colors, info);
+    #{$type}.#{$name}{
+        @if(lightness($color) > 50){
+            border: 1px solid darken($color, 25);
+            background-color: lighten($color, 25);
+            color: darken($color, 50);   
+        }
+        @else{
+            border: 1px solid lighten($color, 25);
+            background-color: darken($color, 25);
+            color: lighten($color, 80);  
+        }  
+        font-size: $font-size;
+    }
+}
+
+@mixin element-spaces($type, $step, $numberloops) {
+    @for $i from 1 to ($numberloops + 1) {
+        #{$type}.space-#{$i * $step}{
+            padding: percentage($i * $step / 100);
+            margin: percentage($i * $step / 50);
+        }
+    }
+    /* div.space-5{
+        padding: 5%;
+        margin: 2.5%;
+    }
+    */
+}
+/* p, red  -> p.red  */
+@mixin head-size($step, $font) {
+    @for $i from 0 to ($step) {
+        h#{$i + 1}{
+            font-size: $font - $font*percentage($i*0.001);
+        }
+    }
+}
+
+// AlaBootstrap
+@mixin bootstrap-cols {
+    $sizes: xm, sm, md, lg, xl;
+    @each $size in $sizes {
+        @for $i from 1 to 12 {
+            com-#{$size}-#{$i}{
+                width: percentage($i / 12)
+            }
+        }
+    }
+}
+
+//Kolory - Zad. str. 142
+@mixin head-colors {
+    $colors: red, yellow, green, blue, orange;
+    @each $color in $colors {
+        @for $i from 1 to 7 {
+            .h#{$i}-#{$color}{
+                font-size: #{70 - $i*10}px;
+                color: #{$color};
+            }
+        }
+    }
+}
